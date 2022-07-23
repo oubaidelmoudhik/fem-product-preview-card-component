@@ -104,12 +104,14 @@ button:focus-visible {
   --clr-accent-grayish-blue: hsl(228, 12%, 48%);
 
   --clr-neutral-white: hsl(0, 0%, 100%);
+  --clr-dark-green: hsl(156, 42%, 18%);
 
-  --ff-primary: font-family: 'Fraunces', serif;
-  --ff-secondary: font-family: 'Montserrat', sans-serif;
+  --ff-primary: 'Fraunces', serif;
+  --ff-secondary: 'Montserrat', sans-serif;
   --ff-body: var(--ff-secondary);
 
   --fw-regular: 500;
+  --fw-semi-bold: 600;
   --fw-bold: 700;
 
   --fs-400: 0.875rem;
@@ -177,6 +179,84 @@ svg {
   }
 }
 
+
+/* Genaral styling */
+
+body {
+  margin: 0;
+  padding: 0;
+  
+}
+.container{
+  background-color: var(--clr-primary-cream);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--clr-neutral-white);
+  max-width: 25rem;
+  max-height: 50rem;
+  border-radius: 0.8rem;
+  overflow: hidden;
+  margin: 2rem 1rem;
+  
+}
+.content {
+  padding: 0.7rem 1.7rem;
+}
+
+@media (min-width: 40em){
+
+  .card{
+    display: flex;
+    flex-direction: row;
+    max-width: 40rem;
+  }
+  .content{
+    padding: 1rem 1.7rem;
+    width: 50%;
+
+  }
+  .main-img {
+    width: 50%;
+  }
+  .main-img>img {
+    content: url(/images/image-product-desktop.jpg);
+  }
+
+}
+
+.price{
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  margin-bottom: 0.8rem;
+}
+.discounted{
+  text-decoration: line-through;
+}
+
+h2 {
+  text-transform: uppercase;
+  letter-spacing: 0.4rem;
+}
+
+
+
+
+
+
+
+
+
+
+
 /* Utility classes */
 .text-dark-cyan {
   color: var(--clr-primary-dark-cyan);  
@@ -188,14 +268,45 @@ svg {
   color: var(--clr-accent-grayish-blue);
 }
 
+.button {
+  min-width: 100%;
+  cursor: pointer;
+  display: flex;
+  gap: 0.7rem;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--clr-primary-dark-cyan);
+  padding: 0.95rem 3.5rem;
+  margin-bottom: 1rem;
+  border-radius: 0.6rem;
+  border: none;
+  color: var(--clr-neutral-white);
+  font-family: var(--ff-secondary);
+  font-size: var(--fs-400);
+  font-weight: var(--fw-bold);
+}
+.button:hover{
+  background-color: var(--clr-dark-green);
+}
+@media (min-width:40em){
+  .button{
+    margin-bottom: 0;
+  }
+}
+
+
 .fw-regular {font-weight: var(--fw-regular);}
 .fw-bold {font-weight: var(--fw-bold);}
 
 .fs-primary-heading {
+  margin: 0.7rem 0;
   font-size: var(--fs-600);
+  line-height: 1;
 }
 .fs-secondary {
   font-size: var(--fs-400);
+  line-height: 1.8;
+  margin: 0.8rem 0;
 }
 
 .ff-primary {
@@ -203,8 +314,4 @@ svg {
 }
 .ff-secondary {
   font-family: var(--ff-secondary);
-}
-
-h1 {
-  font-family: 'Fraunces', serif;
 }
