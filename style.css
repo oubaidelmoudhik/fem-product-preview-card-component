@@ -227,7 +227,7 @@ body {
     width: 50%;
   }
   .main-img>img {
-    content: url(/images/image-product-desktop.jpg);
+    content: url(./images/image-product-desktop.jpg);
   }
 
 }
