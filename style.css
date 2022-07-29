@@ -6,7 +6,7 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-color: #242424; 
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -106,8 +106,8 @@ button:focus-visible {
   --clr-neutral-white: hsl(0, 0%, 100%);
   --clr-dark-green: hsl(156, 42%, 18%);
 
-  --ff-primary: 'Fraunces', serif;
-  --ff-secondary: 'Montserrat', sans-serif;
+  --ff-primary: "Fraunces", serif;
+  --ff-secondary: "Montserrat", sans-serif;
   --ff-body: var(--ff-secondary);
 
   --fw-regular: 500;
@@ -133,8 +133,8 @@ button:focus-visible {
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
-ul[role='list'],
-ol[role='list'] {
+ul[role="list"],
+ol[role="list"] {
   list-style: none;
 }
 
@@ -157,7 +157,7 @@ a:not([class]) {
 
 /* Make images easier to work with */
 img,
-picture, 
+picture,
 svg {
   max-width: 100%;
   display: block;
@@ -166,9 +166,9 @@ svg {
 /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
 @media (prefers-reduced-motion: reduce) {
   html:focus-within {
-   scroll-behavior: auto;
+    scroll-behavior: auto;
   }
-  
+
   *,
   *::before,
   *::after {
@@ -179,22 +179,19 @@ svg {
   }
 }
 
-
 /* Genaral styling */
 
 body {
   margin: 0;
   padding: 0;
-  
 }
-.container{
+.container {
   background-color: var(--clr-primary-cream);
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  
 }
 .card {
   display: flex;
@@ -205,40 +202,36 @@ body {
   border-radius: 0.8rem;
   overflow: hidden;
   margin: 2rem 1rem;
-  
 }
 .content {
   padding: 0.7rem 1.7rem;
 }
 
-@media (min-width: 40em){
-
-  .card{
+@media (min-width: 40em) {
+  .card {
     display: flex;
     flex-direction: row;
     max-width: 40rem;
   }
-  .content{
+  .content {
     padding: 1rem 1.7rem;
     width: 50%;
-
   }
   .main-img {
     width: 50%;
   }
-  .main-img>img {
+  .main-img > img {
     content: url(./images/image-product-desktop.jpg);
   }
-
 }
 
-.price{
+.price {
   display: flex;
   gap: 1.5rem;
   align-items: center;
   margin-bottom: 0.8rem;
 }
-.discounted{
+.discounted {
   text-decoration: line-through;
 }
 
@@ -249,7 +242,7 @@ h2 {
 
 /* Utility classes */
 .text-dark-cyan {
-  color: var(--clr-primary-dark-cyan);  
+  color: var(--clr-primary-dark-cyan);
 }
 .text-dark-blue {
   color: var(--clr-accent-dark-blue);
@@ -275,18 +268,21 @@ h2 {
   font-size: var(--fs-400);
   font-weight: var(--fw-bold);
 }
-.button:hover{
+.button:hover {
   background-color: var(--clr-dark-green);
 }
-@media (min-width:40em){
-  .button{
+@media (min-width: 40em) {
+  .button {
     margin-bottom: 0;
   }
 }
 
-
-.fw-regular {font-weight: var(--fw-regular);}
-.fw-bold {font-weight: var(--fw-bold);}
+.fw-regular {
+  font-weight: var(--fw-regular);
+}
+.fw-bold {
+  font-weight: var(--fw-bold);
+}
 
 .fs-primary-heading {
   margin: 0.7rem 0;
