@@ -27,14 +27,14 @@ Users should be able to:
 
 ### Screenshot
 
-![Screenshot 1](./images/Web%20capture_23-7-2022_22325_theniceguywastaken.github.io.jpeg)
-![Screenshot 2](./images/Web%20capture_23-7-2022_223227_theniceguywastaken.github.io.jpeg)
+![Screenshot 1](./images/Web%20capture_23-7-2022_22325_oubaidelmoudhik.github.io.jpeg)
+![Screenshot 2](./images/Web%20capture_23-7-2022_223227_oubaidelmoudhik.github.io.jpeg)
 
 
 ### Links
 
-- Solution URL: [On github repository](https://github.com/theniceguywastaken/fem-product-preview-card-component)
-- Live Site URL: [Live on github pages](https://theniceguywastaken.github.io/fem-product-preview-card-component/)
+- Solution URL: [On github repository](https://github.com/oubaidelmoudhik/fem-product-preview-card-component)
+- Live Site URL: [Live on github pages](https://oubaidelmoudhik.github.io/fem-product-preview-card-component/)
 
 ## My process
 
@@ -66,5 +66,5 @@ I want to continue practicing Flexbox and Grid, they really help with responsive
 ## Author
 
 - My LinkedIn - [Profile](https://www.linkedin.com/in/oubaidelmoudhik/)
-- Frontend Mentor - [@theniceguywastaken](https://www.frontendmentor.io/profile/theniceguywastaken)
+- Frontend Mentor - [@oubaidelmoudhik](https://www.frontendmentor.io/profile/oubaidelmoudhik)
 - Twitter - [@OubaidEM](https://www.twitter.com/oubaidem)
